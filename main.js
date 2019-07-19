@@ -3,7 +3,7 @@ const height = 600;
 const spacing = 120;
 const numPerRow = 7;
 const padding = 5;
-// const blur = 0.5;
+
 let svg = d3.select("svg")
   .attr("width", width)
   .attr("height", height);
@@ -37,23 +37,4 @@ d3.json("all-penises.json", function(err, drawings) {
     .classed("stroke", true);
   
   pathsE.attr("d", line);
-  
-  // let zoom = d3.zoom()
-  //   .scaleExtent([1/12, 4])
-  //   .on("zoom", () => { g.attr("transform", d3.event.transform) })
-  // svg.call(zoom);
-})
-
-// let defs = svg.append("defs");
-// let filter = defs.append("filter").attr("id","gooeyCodeFilter");
-// filter.append("feGaussianBlur")
-//   .attr("in","SourceGraphic")
-//   .attr("stdDeviation",blur)
-//   .attr("color-interpolation-filters","sRGB")
-//   .attr("result","blur");
-// filter.append("feColorMatrix")
-//   .attr("in","blur")
-//   .attr("mode","matrix")
-//   .attr("values","1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7")
-//   .attr("result","gooey");
-// g.style("filter", "url(#gooeyCodeFilter)");
+});
