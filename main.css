@@ -1,0 +1,17 @@
+@import url(webfonts/stylesheet.css);
+
+body {
+  font: normal 14px 'Noto Sans Thai UI', sans-serif;
+  margin: 50px;
+}
+
+.container {
+  width: 850px;
+  margin: 0 auto;
+}
+.drawing {
+  fill: none;
+  stroke: #333;
+  stroke-width: 10;
+  stroke-opacity: 0.8;
+}
