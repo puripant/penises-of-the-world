@@ -1,14 +1,23 @@
 @import url(webfonts/stylesheet.css);
 
 body {
-  font: normal 14px 'Noto Sans Thai UI', sans-serif;
-  margin: 50px;
+  font: normal 16px 'Noto Sans Thai UI', sans-serif;
 }
 
 .container {
   width: 850px;
   margin: 0 auto;
+  padding: 50px 0;
 }
+
+.para {
+  margin: 10px 0;
+}
+
+svg {
+  margin: 20px 0;
+}
+
 .drawing {
   fill: none;
   stroke: #333;

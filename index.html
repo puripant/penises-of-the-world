@@ -22,12 +22,30 @@
   <meta name="twitter:description" content="Explore penis drawing data by country" />
   <meta name="twitter:image" content="http://puripant.ruchikachorn.com/penises-of-the-world/thai-penises.png" />
 
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
 	<link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container"><svg></svg></div>
+  <div class="container">
+    <select id="countries" class="ui search dropdown">
+      <option value="">Choose a country …</option>
+    </select>
+    <div class="para">
+      There are <span id="drawing-num">-</span> penises such as
+    </div>
+    <svg></svg>
+    <!-- <div class="ui horizontal divider">and maybe more penises!</div> -->
+    <div class="para">
+      More details and code on <a href="https://github.com/puripant/penises-of-the-world">GitHub</a>
+    </div>
+  </div>
 
+  <script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
   <script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="main.js"></script>
 </body>
